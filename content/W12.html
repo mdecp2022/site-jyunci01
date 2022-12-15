@@ -143,6 +143,22 @@ img.add_border {
         </header>
     <div id="tipue_search_content">W10 << <a href='W10.html'>Previous</a> <a href='cp2022.html'>Next</a> >> cp2022<br /><h1>W12</h1>
 <p><a href="https://mdecp2022.github.io/site-jyunci01/content/Brython.html?src=https://gist.githubusercontent.com/jyunci01/e20666234988afa30590faf82813e4fb/raw/f7bfe401fe35bb853b8ea0bee7983e54310f90fd/w12_hw-1py">hw 第一練習</a></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
+user_input_temp = input("請輸入攝氏溫度值:")
+# 接著列出 user_input_temp 變數的資料型別
+print(type(user_input_temp))</pre>
+<h6><a href="https://mdecp2022.github.io/site-jyunci01/content/Brython.html?src=https://gist.githubusercontent.com/jyunci01/ce168d98618b5aa1b07a9a57787d4d77/raw/728cc85f53b6b8277481d0c84755416782673643/w12_hw-2py">hw第二個練習</a></h6>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># Brython 的 input() 可以接受輸入提示字串, 跳出瀏覽器輸入表單後, 將輸入內容以字串取回
+user_input_temp = input("請輸入攝氏溫度值:")
+# 接著列出 user_input_temp 變數的資料型別
+print(type(user_input_temp))
+# 到這裡已知利用 input() 函式將傳回字串, 接著以 float() 將字串轉為浮點數
+user_input_temp = float(user_input_temp)
+# 因為攝氏溫度乘上 9/5 之後再加上 32 就可以得到對應的華氏溫度值
+Fahrenheit = (user_input_temp*9/5) + 32
+# 到這裡, Fahrenheit 資料型別為浮點數, 而 user_input_temp 在第 8 行也轉為浮點數
+# 要將兩個浮點數與字串相加, 都必須透過 str() 轉為字串
+print("攝氏 " + str(user_input_temp) + " 度, 等於華氏 " + str(Fahrenheit) + " 度.")</pre>
 <br />W10 << <a href='W10.html'>Previous</a> <a href='cp2022.html'>Next</a> >> cp2022</div>
         
     <!-- footer -->
